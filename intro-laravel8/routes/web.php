@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::view('/', 'index');
+Route::view('/', 'index')->name('home');
 
 Route::middleware([
     'auth:sanctum',
